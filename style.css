@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100..800&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+html , body{
+    height: 100%;
+}
+.title{
+    font-family:sans-serif;
+    margin-top: 20px;
+    font-size: 48px;
+    margin-bottom: 20px;
+    color:#4895ef;
+}
+nav{
+    margin-bottom: 100px;
+    margin-top: 10px;
+}
+nav button{
+    color: white;
+    font-size: 25px;
+    padding: 6px;
+    margin: 0px 10px;
+    background-color: #4361ee;
+    border-radius: 20px;
+    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+  nav button:hover{
+    cursor: pointer;
+    transform: scale(1.08);
+    background-color: #0530bdef;
+}
+.category-btn.active {
+    background-color: #4cc9f0;
+    color: black;
+}
+
+.main{
+    /* background-image: url(C:\Users\bikra\Desktop\Sigma-Web-Dev\Q_1\images\new-background.jpg); */
+    background-color: rgb(0, 0, 0);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    position: relative;
+    height: 98vh;
+}
+ .main .container{
+    background-color: #1e1e1e;
+    box-shadow: 6px 5px 15px rgba(3, 20, 99, 0.788);
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    max-width: 666px;
+    height: auto;
+    border: 0px solid red;
+    border-radius: 20px;
+}
+.box{
+    font-size: 24px;
+    padding: 15px;
+    color: rgb(245, 245, 245);
+    width: 100%;
+    max-width: 509px;
+    height: auto;
+    min-height:100px;
+    border: 2px solid rgb(97, 94, 94);
+    border-radius: 10px;
+    box-shadow: 6px 6px 8px rgba(12, 12, 12, 0.788);
+}
+
+
+button{
+    width: auto;
+    font-size: 23px;
+    border-radius: 17px;
+    padding: 5px 35px;
+    margin: 20px;
+    background-color: #4160ee;
+    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+    color: rgb(236, 234, 230);
+}
+button:hover{
+    cursor: pointer;
+    transform: scale(1.08);
+    background-color: #0530bdef;
+}
+.container span{
+    margin-bottom: 25px;
+    color: rgb(19, 95, 165);
+    font-size: 48px;
+}
+@media (max-width: 600px) {
+    .title {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        margin-bottom: 40px;
+    }
+
+    nav button {
+        font-size: 18px;
+        padding: 5px 10px;
+        margin: 5px;
+    }
+
+    .container span {
+        font-size: 24px;
+    }
+
+    button {
+        font-size: 18px;
+        padding: 5px 20px;
+    }
+}
